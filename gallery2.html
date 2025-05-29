@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project 2</title>
+  <title>Project 1</title>
 <style>
 html{
     scroll-behavior: smooth;
@@ -72,19 +72,37 @@ div.gallery img,video {
     margin-top: 20px;
   }
 }
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.video-wrapper button {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 10px;
+}
 </style>
 </head>
 <body>
   <div class="div1">
 <div class="gallery">
-    <img onclick="window.location.href='pic2.jpg';" src="pic2.jpg" alt="Cinque Terre" width="600" height="400">
+    <img onclick="window.location.href='pic2.jpg';" src="pic2.jpg" alt="Cinque Terre">
 </div>
 
 <div class="gallery">
+  <div class="video-wrapper">
+    <button onclick="window.location.href='vedio1.mp4';"></button>
   <video controls onclick="window.location.href='vedio2.mp4';">
     <source src="vedio2.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+  </div>
 </div>
 </div>
 
